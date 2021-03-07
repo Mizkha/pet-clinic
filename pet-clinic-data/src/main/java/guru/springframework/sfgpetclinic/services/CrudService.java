@@ -1,7 +1,10 @@
-package com.springframework.petclinic.services;
+package guru.springframework.sfgpetclinic.services;
 
 import java.util.Set;
 
+/**
+ * Created by jt on 7/21/18.
+ */
 public interface CrudService<T, ID> {
 
     Set<T> findAll();

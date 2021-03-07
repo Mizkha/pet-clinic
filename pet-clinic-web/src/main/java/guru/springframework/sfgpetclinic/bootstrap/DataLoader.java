@@ -1,12 +1,15 @@
-package com.springframework.bootstrap;
+package guru.springframework.sfgpetclinic.bootstrap;
 
-import com.springframework.petclinic.model.Owner;
-import com.springframework.petclinic.model.Vet;
-import com.springframework.petclinic.services.OwnerService;
-import com.springframework.petclinic.services.VetService;
+import guru.springframework.sfgpetclinic.model.Owner;
+import guru.springframework.sfgpetclinic.model.Vet;
+import guru.springframework.sfgpetclinic.services.OwnerService;
+import guru.springframework.sfgpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+/**
+ * Created by jt on 7/25/18.
+ */
 @Component
 public class DataLoader implements CommandLineRunner {
 
@@ -49,7 +52,7 @@ public class DataLoader implements CommandLineRunner {
         vet2.setFirstName("Jessie");
         vet2.setLastName("Porter");
 
-        vetService.save(vet2);
+        vetService.save(vet1);
 
         System.out.println("Loaded Vets....");
     }

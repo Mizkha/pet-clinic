@@ -1,10 +1,13 @@
-package com.springframework.petclinic.services.map;
+package guru.springframework.sfgpetclinic.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * Created by jt on 7/21/18.
+ */
 public abstract class AbstractMapService<T, ID> {
 
     protected Map<ID, T> map = new HashMap<>();
@@ -30,4 +33,5 @@ public abstract class AbstractMapService<T, ID> {
     void delete(T object){
         map.entrySet().removeIf(entry -> entry.getValue().equals(object));
     }
+
 }
